@@ -8,6 +8,9 @@ class MicropostsController < ApplicationController
   def create
     @micropost = current_user.microposts.build(params[:micropost])
     if @micropost.save
+      current_user.followers.each do |follower|
+        UserMailer.micropost_notification(current_user, follower, @micropost).deliver
+      end
       flash[:success] = "Micropost created!"
       redirect_to root_url
     else

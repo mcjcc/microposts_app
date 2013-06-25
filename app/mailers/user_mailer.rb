@@ -6,12 +6,14 @@ class UserMailer < ActionMailer::Base
   #
   #   en.user_mailer.micropost_notification.subject
   #
-  def micropost_notification(user)
+  def micropost_notification(poster, follower, micropost)
     @greeting = "Hi"
-    @user = user
+    @follower = follower
+    @micropost = micropost
+    @poster = poster
 
-    user.followers.each do |t|
-      mail to: t.email, subject: "New Tweet!"
-    end
+    
+    mail to: follower.email, subject: "New Tweet!"
+    
   end
 end
