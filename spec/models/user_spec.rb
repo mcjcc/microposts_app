@@ -40,7 +40,7 @@ describe User do
   it { should respond_to(:follow!)}
   it { should be_valid }
 
-  decribe "following" do
+  describe "following" do
     let(:other_user) { FactoryGirl.create(:user)}
     before do
       @user.save
