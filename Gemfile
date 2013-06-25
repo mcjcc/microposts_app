@@ -15,6 +15,9 @@ gem 'omniauth-github'
 gem 'foreman'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'sinatra', require: false
+gem 'slim'
+
 
 group :development, :test do	
 	gem 'rspec-rails', '2.11.0'

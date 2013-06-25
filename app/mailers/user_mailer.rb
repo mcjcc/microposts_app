@@ -12,7 +12,6 @@ class UserMailer < ActionMailer::Base
     @micropost = micropost
     @poster = poster
 
-    
     mail to: follower.email, subject: "New Tweet!"
     
   end
