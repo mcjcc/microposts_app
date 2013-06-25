@@ -1,0 +1,18 @@
+
+development:
+  adapter: postgresql
+  host: localhost
+  pool: 5
+  username: 
+  database: HEROKU_POSTGRESQL_BLACK_URL
+  encoding: UTF8
+
+test:
+  adapter: postgresql
+  host: localhost
+  encoding: UTF8
+  database: HEROKU_POSTGRESQL_BLACK_URL
+  pool: 5
+  username:
+  password:
+
