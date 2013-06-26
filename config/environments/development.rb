@@ -1,4 +1,6 @@
 MicropostsApp::Application.configure do
+
+  ENV["REDISTOGO_URL"] = 'redis://redistogo:d0a5caa004216de836d301f014959ba2@crestfish.redistogo.com:9134/'
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
