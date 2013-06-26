@@ -1,1 +1,1 @@
-# RoR Tutorial: sample app
+# A mock Twitter app
