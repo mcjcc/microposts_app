@@ -1,1 +1,1 @@
- sidekiq: sidekiq
+sidekiq: sidekiq
