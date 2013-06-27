@@ -1,1 +1,2 @@
-sidekiq: sidekiq
+worker: sidekiq
+redis: redis-server
