@@ -1,2 +1,1 @@
-web: rails server 
-sidekiq: sidekiq
+ sidekiq: sidekiq
