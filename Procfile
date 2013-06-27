@@ -1,2 +1,2 @@
-web: rails server -p $PORT
+web: rails server
 sidekiq: sidekiq
